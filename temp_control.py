@@ -3,10 +3,9 @@ import RPi.GPIO as GPIO
 
 GPIO.setmode(GPIO.BOARD)
 GPIO.setwarnings(False)
-GPIO.setup(12, GPIO.IN)
-print(GPIO.input(12)
 
 DHT11_pin = 12
+GPIO.setup(DHT11_pin, GPIO.IN)
 
 humidity, temperature = Adafruit_DHT.read_retry(Adafruit_DHT_DHT11, DHT11_pin)
 print(GPIO.input(DHT11_pin))
