@@ -1,5 +1,5 @@
 import Adafruit_DHT
-import GPi.GPIO as GPIO
+import RPi.GPIO as GPIO
 
 GPIO.setwarnings(False)
 sensor = Adafruit_DHT.DHT11
