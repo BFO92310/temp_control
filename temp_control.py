@@ -1,6 +1,7 @@
 import Adafruit_DHT
 import RPi.GPIO as GPIO
 
+GPIO.setmode(GPIO.BOARD)
 GPIO.setwarnings(False)
 sensor = Adafruit_DHT.DHT11
 DHT11_pin = 12
